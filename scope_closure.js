@@ -32,6 +32,10 @@ function counter2() {
   return count++;
 }
 
+/* 
+1. Counter1 is calling the variable inside the function. Counter2 is calling variable outside of the function.
+*
+2. 
 
 /******************************************************************************\
 	Task 2: Get Motivated
@@ -46,12 +50,17 @@ function motivation(firstname, lastname) {
   var welcomeText = 'You\'re doing awesome, keep it up ';
 
   // code message function here.
+  function motivation() {
+    return(welcomeText);
+  }
+ motivation();
+}
+
+  
 
 
   //Uncommment this to return the value of your invoked message function
   //return message();
-
-}
 
 motivation('Mohamed', 'Ali'); // 'You're doing awesome keep it up Mohamed Ali.
 
